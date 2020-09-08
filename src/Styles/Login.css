@@ -1,0 +1,104 @@
+.loginContainer {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  
+}
+#siginCard{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 80vh;
+ align-items: center;
+  justify-content: space-between;
+}
+
+.innerCard {
+  display: flex;
+  height: 70vh;
+  width: 100%;
+}
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  width:200%;
+  height: 90%;
+  padding-top: 2em;
+
+}
+.textFields {
+  display: flex;
+  padding: 2em;
+  height:20%;
+  line-height: 0;
+
+}
+.MuiInputBase-root {
+  height: 8vh;
+}
+.submitButton{
+  border-radius: 5px;
+
+}
+#emailField{
+    height: 70%;  
+}
+.signupAlignment{
+display: flex;
+justify-content: center;
+padding-top:1em;
+padding-bottom: .3em;
+}
+.alignButton{
+  border-radius: 5px;
+}
+
+.resetPassword{
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1em;
+}
+.passwordtextField{
+  height:10vh;
+}
+/* .MuiButton-root {
+  width: 100%;
+   background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)";
+  border: 0;
+  color: "white";
+  padding: "0 30px";
+  
+}
+.MuiFormLabel-root {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 0;
+  letter-spacing: 0.00938em;
+}
+
+.MuiButton-colorInherit {
+  color: blueviolet;
+}
+.alignButton{
+    position: relative;
+}
+.signupword{
+position: relative;
+top:10%;
+
+}
+
+.MuiButton-label {
+  width: 80%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+#textField{
+
+} */
