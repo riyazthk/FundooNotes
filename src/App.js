@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router , Route , Switch, Link} from 'react-router-dom';
- import login from './pages/login';
- import register from './pages/register';
+ import login from './pages/Login/login';
+ import register from './pages/Register/register';
 import './App.css';
-import emailVerification from './pages/emailVerification';
-import resetpassword from './pages/resetpassword';
+import emailVerification from './pages/ResetPassword/emailVerification';
+import resetpassword from './pages/ResetPassword/resetpassword';
+import navBar from './DashBoard/navBar'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/register' component={register}/>  
           <Route path='/emailVerification' component={emailVerification}/>
           <Route path='/resetpassword/:token' component={resetpassword}/>
+          <Route path='/DashBoard/navBar' component={navBar}/>
 
        </div>
      </Router>
