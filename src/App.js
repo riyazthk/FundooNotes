@@ -1,11 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router , Route , Switch, Link} from 'react-router-dom';
- import login from './pages/Login/login';
- import register from './pages/Register/register';
+ import Login from './pages/LoginPage/login';
+ import Register from './pages/RegisterPage/register';
 import './App.css';
-import emailVerification from './pages/ResetPassword/emailVerification';
-import resetpassword from './pages/ResetPassword/resetpassword';
-import navBar from './DashBoard/navBar'
+import EmailVerification from './pages/ResetPasswordPage/emailVerification';
+import ResetPassword from './pages/ResetPasswordPage/resetPassword';
+//import ResponsiveDrawer from './dashBoard/drawerComponent';
+import NavBar from './DashBoard/navBar';
+//import NavBar from './DashBoard/navBar';
 
 function App() {
   return (
@@ -13,11 +15,13 @@ function App() {
      <Router>
       
        <div>
-          <Route path='/login' component={login}/>
-          <Route path='/register' component={register}/>  
-          <Route path='/emailVerification' component={emailVerification}/>
-          <Route path='/resetpassword/:token' component={resetpassword}/>
-          <Route path='/DashBoard/navBar' component={navBar}/>
+          <Route path='/login' component={Login}/>
+          <Route path='/register' component={Register}/>  
+          <Route path='/emailVerification' component={EmailVerification}/>
+          <Route path='/resetpassword/:token' component={ResetPassword}/>
+          <Route path='/navBar' component={NavBar} />
+          {/* <Route path='/dashBoard/drawerComponent' component={ResponsiveDrawer}/> */}
+
 
        </div>
      </Router>

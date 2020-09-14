@@ -151,7 +151,7 @@ padding-top:.45em;
 }
 .headerConatiner{
 height:85vh;
-width:100%;
+width:70%;
 }
 .headerNotesContainer{
     height: 16vh;
@@ -160,39 +160,7 @@ width:100%;
     padding-top: 2em;
     
 }
-.NotesContainer{
-    height: 7vh;
-    width:50%;
-    background-color:white;
-    border-radius:7px;
-    box-shadow:0px 0px 4px 4px lightgray;
-    display:flex;
-    flex-direction: row;
-    padding-top:.4em;
-}
-.takeNotes{
-    width:60%;
-    height:5vh;
-    text-align: start;
-    padding-top: .4em;
-    padding-left: 1em;
-}
-.newList{
-    
-    height:5vh;
-    width:10%;
-    padding-top: .4em;
-}
-.drawing{
-    padding-top: .4em;
-    height:5vh;
-    width:10%;
-}
-.uploadImages{
-    padding-top: .4em;
-    height:5vh;
-    width:10%;
-}
+
 /* .navBarSearchComponents{
     display: flex;
     flex-direction: row;

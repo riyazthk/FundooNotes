@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+// const { Component } = require("react");
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+
 import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import DehazeOutlinedIcon from "@material-ui/icons/DehazeOutlined";
 import ViewAgendaOutlinedIcon from "@material-ui/icons/ViewAgendaOutlined";
@@ -12,36 +15,70 @@ import DeleteOutlineOutlinedIcon from "@material-ui/icons/DeleteOutlineOutlined"
 import EmojiObjectsOutlinedIcon from "@material-ui/icons/EmojiObjectsOutlined";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import AppsSharpIcon from "@material-ui/icons/AppsSharp";
-import CheckBoxOutlinedIcon from '@material-ui/icons/CheckBoxOutlined';
-import BrushOutlinedIcon from '@material-ui/icons/BrushOutlined';
-import ImageOutlinedIcon from '@material-ui/icons/ImageOutlined';
-
+import CheckBoxOutlinedIcon from "@material-ui/icons/CheckBoxOutlined";
+import BrushOutlinedIcon from "@material-ui/icons/BrushOutlined";
+import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import "../Styles/navBar.css";
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+import {
+  createMuiTheme,
+  MuiThemeProvider,
+  IconButton,
+  ClickAwayListener,
+  makeStyles,
+} from "@material-ui/core";
 
-const theme = createMuiTheme({
+import SideDrawer from "./dashBoardDrawer";
+import ClickAwayComponent from "./clickAwayComponent";
+import ClickAway from "./clickAwayComponent";
+
+const themes = createMuiTheme({
   overrides: {
     MuiIcon: {
       colorPrimary: {
-        //color: "#eaebe8",
         color: "#eaebe8",
       },
     },
   },
 });
-class navBar extends Component {
+
+class NavBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      anchorEl: null,
+      open: false,
+      notes: false,
+    };
+  }
+
+  handleClick = () => {
+    this.setState({
+      open: true,
+    });
+  };
+  handleCloseClick = () => {
+    this.setState({
+      open: false,
+    });
+  };
+
   render() {
     return (
-      <MuiThemeProvider theme={theme}>
+      <MuiThemeProvider theme={themes}>
         <div className="fundoonotes-fullpage">
           <div className="fundoonotes-navBar">
             <div className="fundoonotes-navBarItems">
               <div className="navBarDehazComponent">
-                <DehazeOutlinedIcon />
+                <DehazeOutlinedIcon onClick={this.handleClick} />
+                <SideDrawer
+                  open={this.state.open}
+                  handleCloseClick={this.handleCloseClick}
+                />
               </div>
+
               <div className="navBarLogoComponent">
                 <div className="logoComponent">
-                  <img src={"./src/Assets/pngImages/googleKeep.png"}></img>
+                  <img src={"../Assets/pngImages/googleKeep.png"}></img>
                 </div>
               </div>
               <div className="navBarnotesComponent">
@@ -55,6 +92,7 @@ class navBar extends Component {
                   <div className="SearchBarComponent">Search</div>
                 </div>
               </div>
+
               <div className="navBarRefreshComponent">
                 <div className="refreshComponent">
                   <RefreshOutlinedIcon />
@@ -84,41 +122,10 @@ class navBar extends Component {
           </div>
           <div className="fundooContainer">
             <div className="fundooContainerBar">
-              <div className="fundooSidebar">
-                <div className="sideBarEmojiObjectsComponent">
-                  <div className="EmojiObjectsComponent">
-                    <EmojiObjectsOutlinedIcon />
-                  </div>
-                </div>
-                <div className="sideBarNotificationsComponent">
-                  <div className="NotificationsComponent">
-                    <NotificationsNoneOutlinedIcon />
-                  </div>
-                </div>
-                <div className="sideBarEditComponent">
-                  <div className="EditComponent">
-                    <EditOutlinedIcon />
-                  </div>
-                </div>
-                <div className="sideBarArchiveComponent">
-                  <div className="ArchiveComponent">
-                    <ArchiveOutlinedIcon />
-                  </div>
-                </div>
-                <div className="sideBarDeleteComponent">
-                  <div className="DeleteComponent">
-                    <DeleteOutlineOutlinedIcon />
-                  </div>
-                </div>
-              </div>
+              <div className="fundooSidebar"></div>
               <div className="headerConatiner">
                 <div className="headerNotesContainer">
-                  <div className="NotesContainer">
-                    <div className="takeNotes">TakeNotes...</div>
-                    <div className="newList"><CheckBoxOutlinedIcon/></div>
-                    <div className="drawing"><BrushOutlinedIcon/></div>
-                    <div className="uploadImages"><ImageOutlinedIcon/></div>
-                    </div>                  
+                  <ClickAway />
                 </div>
               </div>
             </div>
@@ -128,4 +135,4 @@ class navBar extends Component {
     );
   }
 }
-export default navBar;
+export default NavBar;

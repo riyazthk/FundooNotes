@@ -1,0 +1,98 @@
+.NotesContainer{
+    height: 7vh;
+    width:65%;
+    background-color:white;
+    border-radius:7px;
+    box-shadow:0px 0px 4px 4px lightgray;
+    display:flex;
+    flex-direction: row;
+    padding-top:.4em;
+}
+.upperNotesElement{
+    padding: .5em;
+}
+.takeNotes{
+    width:80%;
+    height:5vh;
+    text-align: start;
+    padding-top: .4em;
+    padding-left: 1em;
+    
+}
+.newList{
+    
+    height:5vh;
+    width:10%;
+    padding-top: .4em;
+}
+.drawing{
+    padding-top: .4em;
+    height:5vh;
+    width:10%;
+}
+.uploadImages{
+    padding-top: .4em;
+    height:5vh;
+    width:10%;
+}
+.createNotes{
+    height: 20vh;
+    width:65%;
+    background-color:white;
+    border-radius:7px;
+    box-shadow:0px 0px 4px 4px lightgray;
+    display:flex;
+    flex-direction: column;
+    padding:1em;
+}
+.titleNotes{
+height: 6vh;
+text-align: start;
+font-size: 20px;
+
+}
+
+.addNotes{
+    height:9vh;
+    text-align: start;
+
+}
+.notesOption{
+    display: flex;
+    flex-direction: row;
+    padding: .5em;
+}
+.alertComponent{
+    width:8%;
+
+}
+.groupWorkComponent{
+    width:8%;
+
+}
+.colorPalleteComponent{
+    width:8%;
+
+}.photoSizeComponent{
+    width:8%;
+
+}.archieveComponent{
+    width:8%;
+
+}.moreVertComponent{
+    width:8%;
+
+}.RedoComponent{
+    width:8%;
+
+}.undoComponent{
+    width:8%;
+
+}
+.closeComponent{
+    width:33%;
+    text-align: end;
+}
+.outerTakeNotes{
+    padding: .5em;
+}
