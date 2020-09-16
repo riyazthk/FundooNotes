@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Component } from "react";
 
 // const { Component } = require("react");
@@ -30,7 +31,7 @@ import {
 import SideDrawer from "./dashBoardDrawer";
 import ClickAwayComponent from "./clickAwayComponent";
 import ClickAway from "./clickAwayComponent";
-
+import ViewNote from "./viewNotesComponent";
 const themes = createMuiTheme({
   overrides: {
     MuiIcon: {
@@ -123,9 +124,17 @@ class NavBar extends Component {
           <div className="fundooContainer">
             <div className="fundooContainerBar">
               <div className="fundooSidebar"></div>
-              <div className="headerConatiner">
-                <div className="headerNotesContainer">
-                  <ClickAway />
+              <div className="midContainer">
+                <div className="headerConatiner">
+                  <div className="headerNotesContainer">
+                    <ClickAway />
+
+                  </div>
+                </div>
+                <div className="bodyContainer">
+                  <div className="bodyNotesContainer">
+                   <ViewNote />
+                  </div>
                 </div>
               </div>
             </div>

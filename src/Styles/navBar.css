@@ -87,6 +87,133 @@ padding-top:.45em;
 .accountCircleComponent{
     text-align:right ;
 }
+@media only screen and (max-width:862px){
+    .navBarSearchOutlineComponent{
+    
+        width:40%;
+    }
+    .navBarnotesComponent{
+        display: flex;
+        width: 25%;
+    }
+}
+@media only screen and (max-width:638px){
+    .navBarSearchOutlineComponent{
+    
+        width:35%;
+    }
+    .navBarnotesComponent{
+        display: flex;
+        width: 30%;
+    }
+}
+@media only screen and (max-width:495px){
+    .navBarSearchOutlineComponent{
+    
+        width:30%;
+    }
+    .navBarnotesComponent{
+        display: flex;
+        width: 33%;
+    }
+    .navBarRefreshComponent{
+        width: 8%;
+        padding-top:.45em;
+        }
+        .navBarAgendaComponent{
+            width: 8%;
+            padding-top:.45em;
+            
+        }
+        .navBarSettingComponent{
+            width: 8%;
+            padding-top:.45em;
+        }
+        .navBardottedComponent{
+            width:8%;
+            padding-top: .45em;
+        
+        }
+        .dottedComponent{
+            text-align:right ;
+        }
+        .navBarAccountCircleComponent{
+            width:8%;
+            padding-top: .45em;
+        }
+        .accountCircleComponent{
+            text-align:right ;
+        }
+}
+@media only screen and (max-width:400px){
+    .navBarSearchOutlineComponent{
+    
+        width:15%;
+    }
+    .navBarnotesComponent{
+        display: flex;
+        width: 40%;
+    }
+    .navBarSearchBarComponents {
+        width: 3%;
+        justify-content: space-around;
+        padding: .4em;
+      }
+}
+@media only screen and (max-width: 576px) {
+    .navBarnotesComponent{
+        display: flex;
+        width: 35%;
+    }
+    .notesComponent{
+        width: 100%;
+        text-align: left;
+        font-size: x-large;
+        padding-left: .4em;    
+    }
+    .navBarSearchOutlineComponent{
+    
+        width:30%;
+    }
+    .navBarSearchBarComponents {
+        width: 5%;
+        justify-content: space-around;
+        padding: .4em;
+      }
+      .SearchBarComponent{
+          width:100%;
+          padding: .4em;
+          font-size:medium;
+      }
+    .navBarRefreshComponent{
+        width: 7%;
+        padding-top:.45em;
+        }
+        .navBarAgendaComponent{
+            width: 7%;
+            padding-top:.45em;
+            
+        }
+        .navBarSettingComponent{
+            width: 7%;
+            padding-top:.45em;
+        }
+        .navBardottedComponent{
+            width:7%;
+            padding-top: .45em;
+        
+        }
+        .dottedComponent{
+            text-align:right ;
+        }
+        .navBarAccountCircleComponent{
+            width:7%;
+            padding-top: .45em;
+        }
+        .accountCircleComponent{
+            text-align:right ;
+        }
+}
 .fundooContainer{
     height:100vh;
     width:100%;
@@ -98,7 +225,7 @@ padding-top:.45em;
     flex-direction:row;
 }
 .fundooSidebar{
-    width:15%;
+    width:20%;
     height:85vh;
     
 }
@@ -150,14 +277,33 @@ padding-top:.45em;
     text-align:left;
 }
 .headerConatiner{
-height:85vh;
-width:70%;
+height:30vh;
+width:85%;
+
 }
 .headerNotesContainer{
     height: 16vh;
     width:100%;
     padding-left: 10em;
     padding-top: 2em;
+    
+    
+}
+.bodyNotesContainer{
+    height: 50vh;
+    width:85%;
+    display: flex;
+    flex-direction: row;
+
+}
+.midContainer{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.bodyContainer{
+    width:100%;
     
 }
 

@@ -35,8 +35,8 @@ const theme = createMuiTheme({
   overrides: {
     MuiDrawer: {
       paper: {
-        width: "20%",
-        top: "12%",
+        width: "16.5%",
+        top: "12.5%",
       },
     },
   },

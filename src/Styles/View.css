@@ -1,0 +1,15 @@
+.createViewNote{
+    height:30vh;
+    width:30%;
+    background-color: yellowgreen;
+}
+.viewTitleNote{
+    height:10vh;
+    width:25%;
+    background-color: thistle;
+}
+.viewDescriptionNote{
+    height:10vh;
+    width:25%;
+    background-color: rgb(218, 142, 42);
+}

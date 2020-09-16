@@ -14,7 +14,8 @@ import CheckBoxOutlinedIcon from "@material-ui/icons/CheckBoxOutlined";
 import BrushOutlinedIcon from "@material-ui/icons/BrushOutlined";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import { createMuiTheme, InputBase, MuiThemeProvider } from "@material-ui/core";
-import { addNotes } from "../services/notesService";
+import { addNotes, getNotes } from "../services/notesService";
+import viewNote from "./viewNotesComponent"
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
@@ -49,32 +50,31 @@ export default function ClickAway() {
   };
 
   const handleCloseClick = () => {
-    const formData = new FormData();
+    // const formData = new FormData();
     setOpen(true);
-    formData.append("title",title)
-    formData.append("description",notes)
-    addNotes(formData).then(response=>{
-      console.log(response)
-    }).catch(error=>{
-      console.log(error)
-    });
-
+    // formData.append("title",title)
+    // formData.append("description",notes)
+    // addNotes(formData).then(response=>{
+    //   console.log(response)
+    // }).catch(error=>{
+    //   console.log(error)
+    // });
+    viewNote()
   };
+  // const printData=()=>{
+  //   {getNotesList.map((text, index) => (
+  //   console.log(text[index].title +""+text[index].description)
+  //   ))}
+  // }
   const handleTitleInput = (event) => {
     setTitle(event.target.value);
-    //formData.append("title",title)
   };
   const handleNoteInput = (event) => {
     setNotes(event.target.value);
-    // formData.append("description", notes);
-    //addNotes(formData);
+    
 
   };
-//  let notesData={
-//     title:title,
-//     description:notes
-//   }
-  // formData.apppend("data",notesData)
+
 
   return (
     <MuiThemeProvider theme={themes}>
