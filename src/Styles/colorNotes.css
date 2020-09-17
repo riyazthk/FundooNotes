@@ -1,0 +1,29 @@
+.colorMainHeader{
+    height:20vh;
+    width:20%;
+    background-color: turquoise;
+}
+.colorPopUp{
+    height:20vh;
+    width:20%;
+    background-color: turquoise;
+}
+.innerColorPopUp{
+    /* position: 'absolute';
+    top: 28;
+    right: 0;
+    left: 0;
+    border: '1px solid';
+    background-color: teal; */
+}
+.colorPopUp{
+    position: 'absolute';
+    top: 28;
+    right: 0;
+    left: 0;
+    border: '1px solid';
+    background-color: teal;
+}
+.div:hover{
+    background-color: teal;
+}

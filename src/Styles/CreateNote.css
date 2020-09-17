@@ -62,6 +62,12 @@ font-size: 20px;
     flex-direction: row;
     padding: .5em;
 }
+.notesIcon{
+    display: hide;
+}
+.notesAlertComponent{
+    display: "none";
+}
 .alertComponent{
     width:8%;
 

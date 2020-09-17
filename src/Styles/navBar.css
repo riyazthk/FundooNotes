@@ -220,7 +220,7 @@ padding-top:.45em;
     
 }
 .fundooContainerBar{
-    height:80vh;
+    height:100vh;
     display: flex;
     flex-direction:row;
 }
@@ -301,9 +301,14 @@ width:85%;
     flex-direction: column;
     width: 100%;
     height: auto;
+    flex-wrap: wrap;
 }
 .bodyContainer{
     width:100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+
     
 }
 

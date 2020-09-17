@@ -1,15 +1,67 @@
 .createViewNote{
     height:30vh;
     width:30%;
-    background-color: yellowgreen;
 }
 .viewTitleNote{
-    height:10vh;
-    width:25%;
-    background-color: thistle;
+    height:3vh;
+    width:100%;
+    text-align: start;
+    padding:.5em;
+    font-weight:500;
 }
 .viewDescriptionNote{
-    height:10vh;
-    width:25%;
-    background-color: rgb(218, 142, 42);
+    height:20vh;
+    width:100%;
+    text-align: start;
+    padding-left:.5em;
+    
+    
 }
+#viewNotesCard{
+    display: flex;
+    flex-direction: column;
+    height:30vh;
+    width:250px;
+    justify-content: space-between;
+    margin: 10px;
+    border:1px solid lightgray;
+
+}
+.viewNotes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* padding: 1em; */
+    height: 150vh;
+    width:100%;
+}
+.notesIcon{
+    display: flex;
+    flex-direction: row;
+}
+.notesAlertComponent{
+    
+    width:17%;
+}
+.notesGroupWorkComponent{
+    width:17%;
+}
+.notesColorPalleteComponent{
+    width:17%;
+}
+.notesPhotoSizeComponent{
+    width:17%;
+}
+.notesArchieveComponent{
+    width:17%;
+}
+.notesMoreVertComponent{
+    width:17%;
+}
+/* .arrangNotes{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    flex-wrap: wrap;
+
+} */

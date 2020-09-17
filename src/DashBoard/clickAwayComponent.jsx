@@ -15,7 +15,7 @@ import BrushOutlinedIcon from "@material-ui/icons/BrushOutlined";
 import ImageOutlinedIcon from "@material-ui/icons/ImageOutlined";
 import { createMuiTheme, InputBase, MuiThemeProvider } from "@material-ui/core";
 import { addNotes, getNotes } from "../services/notesService";
-import viewNote from "./viewNotesComponent"
+import ViewNote from "./viewNotesComponent";
 const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
@@ -50,16 +50,17 @@ export default function ClickAway() {
   };
 
   const handleCloseClick = () => {
-    // const formData = new FormData();
+     const formData = new FormData();
     setOpen(true);
-    // formData.append("title",title)
-    // formData.append("description",notes)
-    // addNotes(formData).then(response=>{
-    //   console.log(response)
-    // }).catch(error=>{
-    //   console.log(error)
-    // });
-    viewNote()
+    formData.append("title",title)
+    formData.append("description",notes)
+    addNotes(formData).then(response=>{
+      console.log(response)
+    }).catch(error=>{
+      console.log(error)
+    });
+    
+    new ViewNote().componentDidMount();
   };
   // const printData=()=>{
   //   {getNotesList.map((text, index) => (
